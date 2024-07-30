@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "micronix_controller"
+version = "0.1.0"
+description = "Serial communication with a Micronix MMC-110 device"
+authors = [
+    { name = "Derrick Brittain", email = "derrickb@alleninstitute.org" }
+]
+dependencies = [
+    "pyserial",
+]
+
+[tool.setuptools]
+packages = ["micronix_controller"]
